@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mineSwepeer</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="black-white"></div>
+    <div class="container">
+<div class="header">
+    <h1>The mineSwepeer Game <div class="stop-watch"><span>Timer : </span>00:00:000</div></h1>
+    
+    <div class="smiley" onclick="restartGame()"></div>
+    <!-- <div class="stop-watch"><span>Timer : </span>00:00:000</div> -->
+    <div class="countClick"><button class="safeClick" onclick="safeClick()">Safe-Click</button><span></span> clicks available</div>
+    <!-- <button class="safeClick" onclick="safeClick()">Safe-Click</button> -->
+    <div class="levels">Chose your level :
+        <button onclick="initGame(4,2,1)">Beginner</button>
+        <button onclick="initGame(8,5,2)">Medium</button>
+        <button onclick="initGame(12,10,3)">Expert</button>    
+    </div>
+    <div class="life">Lives : <span></span></div>
+</div>
+    <table>
+        <tbody class="game-board"></tbody>
+    </table>
+    <div class="bestScore">
+      Best Score: 
+      <span style="display: block;">level 1: <span class="time1"></span></span>
+      <span style="display: block;">level 2: <span class="time2"></span></span>
+      <span style="display: block;">level 3: <span class="time3"></span></span>
+    </div>
+    <div class="fotter">
+       &copy; rachelfurman2021
+    </div>
+</div>
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
